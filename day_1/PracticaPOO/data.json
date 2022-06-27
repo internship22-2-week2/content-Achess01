@@ -1,0 +1,72 @@
+{
+  "descripcion": "Ordenes",
+  "ordenes": [
+    {
+      "_computadoras": [
+        {
+          "_id": 1,
+          "_nombre": "PC para Juegos",
+          "_monitor": {
+            "_id": 1,
+            "_marca": "Asus",
+            "_tamano": "1080p"
+          },
+          "_teclado": {
+            "_marca": "HP",
+            "_id": 1,
+            "_tipoEntrada": "usb"
+          },
+          "_raton": {
+            "_marca": "Microsoft",
+            "_id": 1,
+            "_tipoEntrada": "usb"
+          }
+        }
+      ],
+      "_id": 1
+    },
+    {
+      "_computadoras": [
+        {
+          "_id": 3,
+          "_nombre": "PC para Juegos",
+          "_monitor": {
+            "_id": 3,
+            "_marca": "Aoc",
+            "_tamano": "1440p"
+          },
+          "_teclado": {
+            "_marca": "Logitech",
+            "_id": 3,
+            "_tipoEntrada": "usb"
+          },
+          "_raton": {
+            "_marca": "Logitech",
+            "_id": 3,
+            "_tipoEntrada": "usb"
+          }
+        },
+        {
+          "_id": 2,
+          "_nombre": "PC para Juegos",
+          "_monitor": {
+            "_id": 2,
+            "_marca": "Samsung",
+            "_tamano": "1200p"
+          },
+          "_teclado": {
+            "_marca": "Razer",
+            "_id": 2,
+            "_tipoEntrada": "usb"
+          },
+          "_raton": {
+            "_marca": "Razer",
+            "_id": 2,
+            "_tipoEntrada": "usb"
+          }
+        }
+      ],
+      "_id": 3
+    }
+  ]
+}

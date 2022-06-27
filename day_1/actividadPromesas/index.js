@@ -22,13 +22,12 @@ const URL_BANDERAS = "https://flagcdn.com/es/codes.json";
 const URL_POSTS = "https://jsonplaceholder.typicode.com/posts";
 const URL_POST = (id) => `${URL_POSTS}/${id}`;
 
-
 const obtenerCodigos = fetch(URL_BANDERAS);
 const obtenerPosts = fetch(URL_POSTS);
 const obtenerPost = fetch(URL_POST(2));
 
 let promesas = [obtenerCodigos, obtenerPost, obtenerPosts];
-
+// Hacer las petitiones para todas
 obtenerCodigos.then((json) => {
   console.table(Object.keys(json));
 });
@@ -39,4 +38,14 @@ obtenerPosts.then((posts) => {
 
 obtenerPost.then((post) => {
   console.log(post);
+});
+
+//Promise.all
+Promise.all(promesas).then((resultados) => {
+  console.log(resultados);
+});
+
+//Promise.race
+Promise.race(promesas).then((resultado) => {
+  console.log(resultado);
 });
